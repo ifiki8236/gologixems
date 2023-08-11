@@ -3,16 +3,16 @@
     font-size: 80px;
     color: #fff;
     text-align: center;
-    animation: glow-1 2s ease-in-out infinite alternate;
+    animation: glow-1 1.5s ease-in-out infinite alternate;
   }
   
   @keyframes glow-1 {
     from {
-        filter: drop-shadow(2px 2px 2px rgb(255, 6, 6));
+        filter: drop-shadow(1px 1px 3px rgb(231, 3, 3));
     }
     
     to {
-        filter: drop-shadow(2px 2px 3px rgb(207, 103, 103));
+        filter: drop-shadow(2px 2px 5px rgb(223, 132, 132));
     }
   }
 /* drop down bar  */
@@ -23,6 +23,7 @@
     background-repeat:no-repeat;
     background-position: center; /* Center the background image within the div */
     background-color: white;
+
 }
 .menu-items {
     background-color: rgb(238, 238, 238);
@@ -37,4 +38,5 @@
 }
 .down-menu:hover {
     cursor: pointer;
+    background-color: rgb(182, 182, 182);
 }

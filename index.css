@@ -15,7 +15,7 @@ body,h1 {
 }
 
 .bgimg {
-  /* background-image: url('ems_two_vehicles.jpg'); */
+  background-image: url('ems_two_vehicles.jpg');
   background-color: black;
   min-height: 100vh;
   background-position: center;
@@ -53,13 +53,12 @@ img {
     padding-left: 0;
     height: 36px;
     width: 100px;
-    background-color: blue;
-    
 }
 
 .top-header {
     width: 100vw;
     height: 36px;
+    background-color: black;
 }
 
 
@@ -95,7 +94,6 @@ hr {
     word-spacing: -40px; /* Adjust spacing */
     top:-65px;
     height: 36px;
-
 }
 /* footer area */
 .footer p {
