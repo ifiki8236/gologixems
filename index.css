@@ -1,0 +1,85 @@
+body, html {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+body,h1 {
+    font-family: "Raleway", sans-serif;
+}
+:root {
+    --background: #e10000;
+}
+
+.bgimg {
+  /* background-image: url('ems_two_vehicles.jpg'); */
+  background-color: black;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.welcome-box {
+    background-color: whitesmoke;
+    opacity: 0.75;
+    text-align: center;
+    width: 100vw;
+}
+.welcome {
+    opacity: 1;
+    color: black;
+    width: 100%;
+}
+h2 {
+    color: whitesmoke;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+img {
+    max-width: fit-content;
+    max-height: 100px;
+    display: block;
+}
+.grid {
+}
+/*Navigation bar styles start here*/
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: repeat(1,1fr );
+    padding: 0;
+    text-align: left;
+    padding-left: 0;
+    height: 36px;
+    width: 100px;
+    background-color: blue;
+    
+}
+.menu-items {
+    background-color: whitesmoke;
+    width: 100vw;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+    text-shadow: 2px 1px 1px black;
+
+}
+
+/* header {
+    background-color: var(--background);
+} */
+.top-header {
+    width: 100vw;
+}
+
+.down-menu, .logo {
+    width:100%; /* Set the width of the div */
+    height: 36px; /* Set the height of the div */
+    background-size: contain; /* Scale the background image to cover the entire div */
+    background-repeat:no-repeat;
+    background-position: center; /* Center the background image within the div */
+    background-color: white;
+}
+.logo {
+    background-color: transparent;
+}
+

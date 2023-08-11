@@ -1,0 +1,18 @@
+/*logo glow*/
+.glow-1 {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow-1 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow-1 {
+    from {
+        filter: drop-shadow(2px 2px 2px rgb(255, 6, 6));
+    }
+    
+    to {
+        filter: drop-shadow(2px 2px 3px rgb(207, 103, 103));
+    }
+  }
+/* drop down bar  */
