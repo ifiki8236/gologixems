@@ -16,3 +16,25 @@
     }
   }
 /* drop down bar  */
+.down-menu {
+    width:100vw; /* Set the width of the div */
+    height: 36px; /* Set the height of the div */
+    background-size: contain; /* Scale the background image to cover the entire div */
+    background-repeat:no-repeat;
+    background-position: center; /* Center the background image within the div */
+    background-color: white;
+}
+.menu-items {
+    background-color: rgb(238, 238, 238);
+    width: 100vw;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+    text-shadow: 2px 1px 1px black;
+    box-shadow: 1px 1px 15px 1px var(--glow_white);
+    /* THIS IS CONTROLLED VIA THE animation.js FILE */
+    display: none;
+}
+.down-menu:hover {
+    cursor: pointer;
+}
