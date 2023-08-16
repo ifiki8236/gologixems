@@ -1,0 +1,30 @@
+.grid-content-header {
+    display: grid;
+    justify-content: center;
+    height: 100vh; /* Adjust as needed */
+}
+.header {
+    display: block;
+    text-align: center;
+    margin-top: 4.15rem;
+    height: fit-content;
+    border: transparent black;
+    text-shadow: 2px 2px 2px whitesmoke;
+}
+.bgimg-careers-page {
+    background-image: url('EMS_near_beach.jpg');
+    background-color: black;
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.info-section {
+    padding: 2rem;
+    font-size: 1.15rem;
+    text-shadow: 2px 2px 2px black;
+}
+.career-paragraph {
+    border: transparent black 1px;
+    width: fit-content;
+    background: rgba(0, 0, 0, 0.5);
+}

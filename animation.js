@@ -1,11 +1,17 @@
-// import { drop_down_bttn } from "./variables";
-
-let drop_down_bttn = document.getElementsByClassName('drop_down_bttn');
+let drop_down_bttn = document.getElementById('drop_down_bttn');
+let menu = document.getElementById('menu');
+let menu_hidden = true;
 
 function pressedMenu() {
-    alert('Function is working!');
-    console.log('menu pressed');
-    // animation_vars.menu.style.display = 'block';
+    if (menu_hidden) {
+        console.log('opened the menu');
+        menu.style.display = 'block';
+        menu_hidden = false;
+    }else {
+        console.log('closed the menu')
+        menu.style.display = 'none'
+        menu_hidden = true;
+    }
 }
 
 drop_down_bttn.addEventListener('click', pressedMenu);

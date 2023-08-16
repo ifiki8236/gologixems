@@ -3,15 +3,24 @@
     --links: rgb(255, 199, 149);
     --glow_white: white;
 }
-
+.grid {
+    display: flex;
+    justify-content: center;
+    height: 100vh; /* Adjust as needed */
+}
 body, html {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     background-color: black;
+    color: black;
 }
 body,h1 {
     font-family: "Raleway", sans-serif;
+    color: black;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
 .bgimg {
@@ -22,20 +31,25 @@ body,h1 {
   background-size: cover;
 }
 .welcome-box {
-    background-color: whitesmoke;
+    background: rgba(254, 254, 254, 0.5);
     opacity: 0.75;
     text-align: center;
     width: 100vw;
+    z-index: -1;
 }
 .welcome {
     opacity: 1;
     color: black;
-    width: 100%;
+    width: 100vw;
+    z-index: -1;
+    
 }
 h2 {
     color: whitesmoke;
-    font-size: 20px;
-    text-shadow: 2px 2px 2px black;
+    font-size: 2rem;
+    text-shadow: 4px 2px 2px black;
+    width: 100vw;
+    font-weight: bold;
 }
 img {
     max-width: fit-content;

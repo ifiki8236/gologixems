@@ -23,20 +23,30 @@
     background-repeat:no-repeat;
     background-position: center; /* Center the background image within the div */
     background-color: white;
-
+    z-index: 5;
+}
+.home, .about, .contact, .careers {
+    min-height: 4rem;
+    padding: 0.5rem;
 }
 .menu-items {
     background-color: rgb(238, 238, 238);
     width: 100vw;
     text-align: center;
     font-weight: bold;
+    font-size: 2rem;
     color: gray;
     text-shadow: 2px 1px 1px black;
-    box-shadow: 1px 1px 15px 1px var(--glow_white);
+    z-index: 1;
+    /* box-shadow: 1px 1px 15px 1px var(--glow_white); */
     /* THIS IS CONTROLLED VIA THE animation.js FILE */
     display: none;
 }
-.down-menu:hover {
+.top, .footer {
+    position: fixed;
+    z-index: 10;
+}
+/* .down-menu:hover {
     cursor: pointer;
     background-color: rgb(182, 182, 182);
-}
+} */
