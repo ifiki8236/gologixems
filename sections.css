@@ -11,13 +11,7 @@
     border: transparent black;
     text-shadow: 2px 2px 2px whitesmoke;
 }
-.bgimg-careers-page {
-    background-image: url('EMS_near_beach.jpg');
-    background-color: black;
-    min-height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
+
 .info-section {
     padding: 2rem;
     font-size: 1.15rem;

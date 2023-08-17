@@ -1,5 +1,8 @@
-let drop_down_bttn = document.getElementById('drop_down_bttn');
-let menu = document.getElementById('menu');
+const drop_down_bttn = document.getElementById('drop_down_bttn');
+const menu = document.getElementById('menu');
+const checkMark = document.getElementById('check-mark');
+const CV = document.getElementById('myFile');
+
 let menu_hidden = true;
 
 function pressedMenu() {
@@ -13,5 +16,9 @@ function pressedMenu() {
         menu_hidden = true;
     }
 }
-
+function show_checmark() {
+    check_mark.style.visibility = 'visible';
+    check_mark.style.display = 'block';
+}
+CV.addEventListener('change', show_checmark);
 drop_down_bttn.addEventListener('click', pressedMenu);

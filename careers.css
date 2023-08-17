@@ -1,0 +1,47 @@
+.apply-container {
+    display: grid;
+    grid-template-columns: auto ;
+    gap: 1rem; /* Adds a gap between columns and rows */
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+}
+html {
+    background-image: url('EMS_near_beach.jpg');
+    min-height: 100vh; /* Use min-height instead of height */
+    background-position: center;
+    background-size: contain;
+}
+.application {
+    display: inline;
+    background-color: red;
+    margin-bottom: 15%;
+    padding: 1.5rem;
+    width: 100vw;    
+}
+.apply-container label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 0.25rem;
+}
+#myFile {
+    width: 100px;
+    overflow: hidden;
+}
+.submit-bttn {
+    margin-top: 2rem;
+}
+#check-mark {
+    display: none;
+}
+
+/* #file-input-label {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    display: inline-block;
+} */

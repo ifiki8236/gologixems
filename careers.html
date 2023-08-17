@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="animations.css">
     <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="careers.css">
 
     </head>
     <body>
@@ -62,35 +63,54 @@
                                 <h2 class=" join-us-header w3-center ">JOIN US TODAY!</h2>
                             </div>
                             <div class="career-paragraph">
-                                <p class="info-section">"Professional and Courteous Staff: Our team consists of skilled EMTs, and dedicated drivers who are trained to provide compassionate and professional care."</p>
+                                <p class="info-section">"Our team consists of skilled EMTs, and dedicated drivers who are trained to provide compassionate and professional care."</p>
                                 <hr class="w3-border-blue-black" style="margin:auto;width:40%">
                                 <p class="info-section">"We prioritize the comfort and well-being of our patients, ensuring a positive experience throughout the journey."</p>
                             </div>
                         </div>
                     </div>
-                    <div class="application-form">
-                        <form action="submit" class="" enctype="multipart/form-data">
+                    <div class="apply-container">
+                        <form action="mailto:isedemidiong@gmail.com" method="post" class="application" enctype="multipart/form-data">
+                            <h3>GoLogix Application</h3>
                             <div>
                                 <label for="first_name">First Name:</label>
+                                <div>
                                 <input type="text" id="first_name" name="first_name" required>
+                                </div>
                             </div>
                             <div>
                                 <label for="last_name">Last Name:</label>
+                                <div>
                                 <input type="text" id="last_name" name="last_name" required>
+                                </div>
                             </div>
                             <div>
                                 <label for="email">Email Address:</label>
+                                <div>
                                 <input type="email" id="email" name="email" required>
+                                </div>
                             </div>
                             <div>
                                 <label for="phone">Phone Number:</label>
+                                <div>
                                 <input type="tel" id="phone" name="phone" required>
+                                </div>
                             </div>
-                            <div>
-                                <label for="resume">Resume (PDF):</label>
-                                <input type="file" id="resume" name="resume" accept=".pdf" required>
+                            <div class="job-choice">
+                                <label for="choices" required="required">Applied Position</label>
+                                <select name="choices" id="choices">
+                                    <option value="empty-option">*SELECT OPTION*</option>
+                                    <option value="Emergency Medical Technician">Emergency Medical Technician</option>
+                                    <option value="EMR Driver">EMR Driver</option>
+                                </select>
                             </div>
-                            <div>
+                            <div class="">
+                                <label id="file-input-label" for="resume"><strong>Upload Resume</strong></label>
+                                <input id="myFile" type="file" name="resume" accept=".pdf" title=" "><br>
+                                <i id="check-mark">&#10004; File Added</i>
+                                
+                            </div>
+                            <div class="submit-bttn">
                                 <button type="submit">Submit Application</button>
                             </div>
                         </form>
@@ -101,6 +121,6 @@
                 <p>Call Us For Inquiries! <a href="tel:8636640196">863-664-0196</a></p>
             </div>
         </div>
-        <script src="animation.js" type=""></script>
+        <script src="animation.js" type="script"></script>
     </body>
 </html>

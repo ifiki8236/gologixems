@@ -11,7 +11,7 @@
 body, html {
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    /* background-color: black; */
     color: black;
 }
 body,h1 {
@@ -26,7 +26,7 @@ h1 {
 .bgimg {
   background-image: url('ems_two_vehicles.jpg');
   background-color: black;
-  min-height: 100vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
