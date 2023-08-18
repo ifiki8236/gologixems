@@ -10,7 +10,7 @@ host_email = 'akpannetwork@gmail.com'
 password = 'hqelfmbluipdsrsy'
 
 #client email 
-client_email = 'remycottard@gmail.com'
+client_email = 'karlene.gray@gmail.com'
 
 #start SMTP server
 try:

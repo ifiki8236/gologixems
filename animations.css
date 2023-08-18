@@ -8,11 +8,11 @@
   
   @keyframes glow-1 {
     from {
-        filter: drop-shadow(1px 1px 3px rgb(231, 3, 3));
+        filter: drop-shadow(1px 1px 3px rgb(198, 0, 0));
     }
     
     to {
-        filter: drop-shadow(2px 2px 5px rgb(223, 132, 132));
+        filter: drop-shadow(2px 2px 5px rgb(247, 156, 156));
     }
   }
 /* drop down bar  */
@@ -23,7 +23,7 @@
     background-repeat:no-repeat;
     background-position: center; /* Center the background image within the div */
     background-color: white;
-    z-index: 5;
+    z-index: 1;
 }
 .home, .about, .contact, .careers {
     min-height: 4rem;
@@ -37,16 +37,17 @@
     font-size: 2rem;
     color: gray;
     text-shadow: 2px 1px 1px black;
-    z-index: 1;
+    z-index: 5;
     /* box-shadow: 1px 1px 15px 1px var(--glow_white); */
     /* THIS IS CONTROLLED VIA THE animation.js FILE */
     display: none;
 }
-.top, .footer {
-    position: fixed;
-    z-index: 10;
-}
+
 /* .down-menu:hover {
     cursor: pointer;
     background-color: rgb(182, 182, 182);
 } */
+
+.about, .contact {
+    display: none;
+}

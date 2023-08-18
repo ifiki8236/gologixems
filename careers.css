@@ -6,19 +6,19 @@
     text-align: center;
     width: 100vw;
 }
-html {
+/* body {
     background-image: url('EMS_near_beach.jpg');
-    min-height: 100vh; /* Use min-height instead of height */
     background-position: center;
     background-size: contain;
-}
+} */
 .application {
     display: inline;
-    background-color: red;
+    background-color: rgba(199, 26, 26, 1.0);
     margin-bottom: 15%;
     padding: 1.5rem;
     width: 100vw;    
 }
+
 .apply-container label {
     display: flex;
     justify-content: center;
