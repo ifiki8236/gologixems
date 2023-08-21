@@ -18,8 +18,9 @@ body {
 }
 .top-header {
     width: 100vw;
-    height: 36px;
+    height: 5rem;
     background-color: black;
+
 }
 .top {
     position: fixed; 
@@ -44,6 +45,19 @@ body {
 
 /* logo design */
 
+.logo {
+    display: block;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    background-color: transparent;
+    font-size: 18px; /* Reduce font size */
+    word-spacing: -40px; /* Adjust spacing */
+    height: auto;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%);
+    border: white solid 2px;
+}
 #logix {
     filter: drop-shadow(0 0 0.25rem rgb(255, 90, 90));
     font-size: 14px; /* Reduce font size */
@@ -60,18 +74,11 @@ body {
 }
 
 #go {
-    font-size: 24px; /* Reduce font size */
+    font-size: 30px; /* Reduce font size */
     color: red;
 }
 
-.logo {
-    position: relative;
-    background-color: transparent;
-    font-size: 18px; /* Reduce font size */
-    word-spacing: -40px; /* Adjust spacing */
-    top:-65px;
-    height: 36px;
-}
+
 .grid-content-header {
     display: grid;
     justify-content: center;

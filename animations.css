@@ -2,7 +2,7 @@
 .glow-1 {
     font-size: 80px;
     color: #fff;
-    text-align: center;
+    /* text-align: center; */
     animation: glow-1 1.5s ease-in-out infinite alternate;
   }
   
