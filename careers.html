@@ -2,6 +2,7 @@
 <html style="background-image: url(EMS_near_beach.jpg);">
     <head>
     <title>W3.CSS Template</title>
+    <link rel="icon" href="company_logo.PNG" type="png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -17,9 +18,9 @@
             <div class="w3-display-topleft w3-xlarge top">
                 <div class="top-header">
                     <div class="logo glow-1 glow-2">
-                        <span id="go">Go</span>
-                        <span id="logix">Logix</span>
-                        <span id="ems">EMS</span> 
+                        <div id="go">Go</div>
+                        <div id="logix">Logix</div>
+                        <div id="ems">EMS</div> 
                     </div>
                 </div>
                 <div class="w3-container nav-bar">
@@ -67,7 +68,7 @@
                         </div>
                     </div>
                     <div class="apply-container">
-                        <form action="mailto:isedemidiong@gmail.com" method="post" class="application" enctype="multipart/form-data">
+                        <form method="post" class="application" enctype="multipart/form-data">
                             <h3>GoLogix Application</h3>
                             <div>
                                 <label for="first_name">First Name:</label>
@@ -108,7 +109,7 @@
                                 
                             </div>
                             <div class="submit-bttn">
-                                <button type="submit">Submit Application</button>
+                                <button id="submitBttn" type="submit">Submit Application</button>
                             </div>
                         </form>
                     </div>
@@ -120,5 +121,6 @@
         </div>
         <script src="animation.js" type=""></script>
         <script src="website_pages.js"></script>
+        <script src="to_server.js"></script>
     </body>
 </html>

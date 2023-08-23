@@ -1,8 +1,7 @@
 html {
     background-position: center;
     background-size: cover;
-    width: 100vw;
-    height: 100%;
+    overflow-x: hidden;
 }
 :root {
     --background: #8c0000;
@@ -14,11 +13,13 @@ body,h1 {
     color: black;
 }
 body {
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    
 }
 .top-header {
     width: 100vw;
-    height: 5rem;
+    height: fit-content;
     background-color: black;
 
 }
@@ -46,31 +47,33 @@ body {
 /* logo design */
 
 .logo {
-    display: block;
+    display: grid;
     grid-template-columns: auto auto auto;
     position: relative;
     background-color: transparent;
     font-size: 18px; /* Reduce font size */
     word-spacing: -40px; /* Adjust spacing */
-    height: auto;
+    height: fit-content;
     width: fit-content;
     left: 50%;
+    
     transform: translate(-50%);
-    border: white solid 2px;
+    border: transparent solid 2px;
 }
 #logix {
     filter: drop-shadow(0 0 0.25rem rgb(255, 90, 90));
-    font-size: 14px; /* Reduce font size */
+    font-size: 30px; /* Reduce font size */
     color: white;
     margin-right: 0px; /* Add some spacing */
+    top: 100px;
 }
 
 #ems {
-    font-size: 11px; /* Reduce font size */
+    font-size: 15px; /* Reduce font size */
     color: rgb(255, 8, 8);
     font-style: oblique;
     margin-left: auto;
-    margin-right: 10px; /* Add some spacing */
+    bottom: 50px;
 }
 
 #go {

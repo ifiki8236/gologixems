@@ -1,0 +1,15 @@
+{
+  "name": "w3-schools-web-layout",
+  "version": "1.0.0",
+  "description": "This is the mobile version\r Hello welcome to a beta version of a website that I have designed for a company! Enjoy!",
+  "main": "animation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  }
+}
