@@ -17,6 +17,20 @@ body {
     height: 100%;
     
 }
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+/* footer area */
+
+
+h2 {
+    color: rgb(231, 231, 231);
+    font-size: 2rem;
+    text-shadow: 5px 5px 2px black;
+    width: 100vw;
+    font-weight: bold;
+}
 .top-header {
     width: 100vw;
     height: fit-content;
@@ -104,7 +118,7 @@ body {
 
 .nav-bar {
     display: grid;
-    grid-template-columns: repeat(1,1fr );
+    grid-template-columns: 1fr, 2fr;
     padding: 0;
     text-align: left;
     padding-left: 0;
@@ -116,8 +130,21 @@ hr {
     text-shadow:25px 2px 5px var(--glow_white);
 }
 
-
-
-a {
+a.number  {
     color: var(--links);
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 1.15rem;
+    }
+    .welcome {
+        font-size: 3.5rem;
+    }
+    .w3-center {
+        font-size: 3rem;
+    }
+    .top-header {
+        height: 50px;
+    }
 }

@@ -28,6 +28,11 @@
 .home, .about, .contact, .careers {
     min-height: 4rem;
     padding: 0.5rem;
+    border: solid black 1px;
+
+}
+a {
+    text-decoration: none;
 }
 .menu-items {
     background-color: rgb(238, 238, 238);
@@ -50,4 +55,19 @@
 
 .about, .contact {
     display: none;
+}
+
+/*FOR COMPUTER SCREENS*/
+@media screen and (min-width: 750px){
+    .menu-items:hover, .down-menu:hover {
+        cursor: pointer;
+    }
+    .home:hover, .careers:hover {
+        background-color: rgb(255, 199, 149);
+        color: white;
+    }
+    .down-menu {
+        height: 50px;
+    }
+
 }

@@ -13,10 +13,11 @@
 } */
 .application {
     display: inline;
-    background-color: rgba(199, 26, 26, 1.0);
+    background-color: rgb(255, 255, 255);
     margin-bottom: 15%;
     padding: 1.5rem;
-    width: 100vw;    
+    width: 100vw; 
+    color: black;   
 }
 
 .apply-container label {
@@ -33,15 +34,9 @@
 .submit-bttn {
     margin-top: 2rem;
 }
-#check-mark {
-    display: none;
+@media screen and (min-width: 750px) {
+    .application {
+        width: 75vw;
+        margin-bottom: 5%;
+    }
 }
-
-/* #file-input-label {
-    cursor: pointer;
-    border: 1px solid #ccc;
-    padding: 4px 8px;
-    border-radius: 4px;
-    background-color: #f1f1f1;
-    display: inline-block;
-} */
