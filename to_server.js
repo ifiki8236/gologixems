@@ -66,7 +66,7 @@ resume.addEventListener('change', function(){
 
 function to_json(applicationData) {
     console.log(applicationData)
-    fetch('http://gologixems.com/', {
+    fetch('http://localhost:80', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
