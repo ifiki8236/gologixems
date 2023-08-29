@@ -56,7 +56,7 @@ class requestHandler(BaseHTTPRequestHandler):
 
 #method that stores and initializes server
 def runServer():
-    PORT = 9999
+    PORT = 80
     try:
         server = HTTPServer(('', PORT), requestHandler)
         print(f'Starting server at http://localhost:{PORT}...')
