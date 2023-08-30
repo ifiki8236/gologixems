@@ -62,16 +62,15 @@ def runServer():
     certfile = 'server.crt'
     keyfile = 'server.key'
     try:
-        # context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-        # context.load_cert_chain(certfile=certfile, keyfile=keyfile)
+        context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+        context.load_cert_chain(certfile=certfile, keyfile=keyfile)
 
         server = HTTPServer(('', PORT), requestHandler)
-        # server.socket = context.wrap_socket(server.socket, server_side=True)
-        print(f"Server started on port: {PORT}")
+        server.socket = context.wrap_socket(server.socket, server_side=True)
+        print(f"Server started at https://localhost:{PORT}")
         server.serve_forever()
     except Exception as e:
         print(f'Error with starting server: {e}')
-        return 1
 #
 if __name__ == '__main__':
     runServer()
