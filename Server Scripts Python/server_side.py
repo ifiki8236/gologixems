@@ -32,8 +32,10 @@ class requestHandler(BaseHTTPRequestHandler):
             # print(json_data)
             #email server script
             #thread started
-            email_thread = threading.Thread(target=self.threaded_email_function, args=(json_data,))
-            email_thread.start()
+            # email_thread = threading.Thread(target=self.threaded_email_function, args=(json_data,))
+            # email_thread.start()
+            send_application(json_data)
+
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.send_header('Access-Control-Allow-Origin', 'https://gologix.onrender.com/')
@@ -52,9 +54,9 @@ class requestHandler(BaseHTTPRequestHandler):
             self.wfile.write(response_body)
         except Exception as e:
             print(f'Error creating response: {e}')
-    def threaded_email_function(self, json_data):
-        print(json_data)
-        send_application(json_data)
+    # def threaded_email_function(self, json_data):
+    #     print(json_data)
+    #     send_application(json_data)
 
 #method that stores and initializes server
 def runServer():
