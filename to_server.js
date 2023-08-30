@@ -66,7 +66,7 @@ resume.addEventListener('change', function(){
 
 function to_json(applicationData) {
     console.log(applicationData)
-    fetch('https://gologixems.com/Server_scripts/', {
+    fetch('http://ifiki8236.pythonanywhere.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
