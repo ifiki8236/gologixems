@@ -11,7 +11,7 @@ class requestHandler(BaseHTTPRequestHandler):
             # headers for response and allowed clients
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
-            self.send_header('Access-Control-Allow-Origin', 'https://gologixems.com/')
+            self.send_header('Access-Control-Allow-Origin', 'https://gologix.onrender.com/')
             self.send_header('Access-Control-Allow-Methods', 'OPTIONS')
             self.send_header('Access-Control-Allow-Headers', 'Content-Type')
             self.end_headers()
@@ -36,7 +36,7 @@ class requestHandler(BaseHTTPRequestHandler):
             email_thread.start()
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
-            self.send_header('Access-Control-Allow-Origin', 'https://gologixems.com/')
+            self.send_header('Access-Control-Allow-Origin', 'https://gologix.onrender.com/')
             self.end_headers()
             response_body = json.dumps(response).encode('utf-8')
             self.wfile.write(response_body)
@@ -46,7 +46,7 @@ class requestHandler(BaseHTTPRequestHandler):
             response = {'ERROR': 'Data not in proper JSON form'}
             self.send_response(400)
             self.send_header('Content-Type', 'application/json')
-            self.send_header('Access-Control-Allow-Origin', 'https://gologixems.com/')
+            self.send_header('Access-Control-Allow-Origin', 'https://gologix.onrender.com/')
             self.end_headers()
             response_body = json.dumps(response).encode('utf-8')
             self.wfile.write(response_body)
