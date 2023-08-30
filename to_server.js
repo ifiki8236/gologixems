@@ -66,7 +66,7 @@ resume.addEventListener('change', function(){
 
 function to_json(applicationData) {
     console.log(applicationData)
-    fetch('hhttps://gologix.onrender.com/', {
+    fetch('https://gologix.onrender.com/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
