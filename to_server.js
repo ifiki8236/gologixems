@@ -66,15 +66,21 @@ resume.addEventListener('change', function(){
 
 function to_json(applicationData) {
     console.log(applicationData)
-    fetch('https://gologix.onrender.com/', {
-        mode: 'no-cors',
+    alert('Application is Being Processed...')
+    fetch('http://127.0.0.1:8080/applicants', {
+        mode: 'cors',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(applicationData)
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+        throw new Error('Request failed'); // Handle non-OK responses
+        }
+        return response.json(); // Parse response body as JSON
+    })
     .then(data => {
         console.log('Response from Server:', data);
         for (let i = 0; i < inputs.length; i++) {
@@ -99,7 +105,7 @@ async function pull_from_DOM(event) {
             'Last Name': last_name.value,
             'Email': email.value,
             'Phone Number': phone.value,
-            'Position Chosen': choice.value,
+            'Position Chosen': choice.value
         }
     };
     
