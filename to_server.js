@@ -67,7 +67,7 @@ resume.addEventListener('change', function(){
 function to_json(applicationData) {
     console.log(applicationData)
     alert('Application is Being Processed...')
-    fetch('http://127.0.0.1:8080/applicants', {
+    fetch('https://ifiki8236.pythonanywhere.com/', {
         mode: 'cors',
         method: 'POST',
         headers: {
